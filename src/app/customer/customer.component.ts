@@ -14,6 +14,7 @@ export class CustomerComponent implements OnInit {
   constructor(private loader: LoaderServiceService,private toaster: ToasterServiceService,private fb: FormBuilder) {
      //loader.loaderToggle(true);
      //toaster.showSuccess('Welcome dear');
+     
    }
 
     customerForm = this.fb.group({
@@ -55,7 +56,7 @@ export class CustomerComponent implements OnInit {
       }
     };
  
-    this.customerForm.setValue({customerData});
+    this.customerForm.setValue(customerData);
   }
 
 }

@@ -1,0 +1,6 @@
+
+    <form #f (ngSubmit)="onSubmit(model)" [formGroup]="form">
+      <formly-form [fields]="fields" [form]="form" [model]="model" ></formly-form>
+      <button [disabled]="!form.valid" color="primary" class="theme-background-red theme-color-white" mat-raised-button>Login</button>
+    </form>
+  
