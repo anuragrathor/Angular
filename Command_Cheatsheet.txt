@@ -4,3 +4,49 @@
 4.) ng g s service_name 		:   To Generate the Service 
 5.) ng generate module orders --route orders --module app.module  :  module with routing, along with its stub component.
 6.) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reference URL :
+
+1.) Reactive Form :  https://www.c-sharpcorner.com/article/reactive-forms-validation-using-angular-12/
+2.) Folow this to Code cheat :  https://www.c-sharpcorner.com/technologies/angularjs
+3.) Pipe Create own :  https://www.c-sharpcorner.com/article/learn-angular-8-step-by-step-in-10-days-pipes-day-5/
+
+
+
+
+

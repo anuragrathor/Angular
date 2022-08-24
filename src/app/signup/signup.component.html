@@ -5,16 +5,52 @@
 		<div class="col-12 col-md-5 text-center smart-form"> 
 			<div class="row"> 
 				<div class="col-12 col-lg-10 mx-auto"> 
-					<h4 class="w500 login-text-clr">Create your FREE Account with us.</h4>
+					<h4 class="w500 login-text-clr">Create your FREE Account with us. {{customerForm.valid}}</h4>
+          {{"hello aear" | propercase : false}}
 					<p class="f-14 f-md-16 d-gblue-clr mt5 mt-md5 mb15 mb-md20 w400">It’s Easy to GET Started! </p>
 					<form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
                 <div class="form-group mb10">
                   <input type="text" formControlName="firstName" class="form-control f-14" placeholder="Enter full name(Up to 20 character)">
+                  <div *ngIf="f.firstName.touched && f.firstName.invalid" class="alert alert-danger">
+                    <small *ngIf="f.firstName.errors && f.firstName.errors.required">Name is required.</small>
+                  </div>
                 </div>
                 <div class="form-group mb10">
-                  <input type="email" formControlName="lastName" class="form-control f-14" placeholder="Enter work email">
+                  <input type="email" formControlName="email" class="form-control f-14" placeholder="Enter work email">       
+                  
+                  <div *ngIf="f.email.touched && f.email.invalid" class="alert alert-danger">
+                    <small *ngIf="f.email.errors && f.email.errors.required">Email is required.</small>
+                    <!-- <small *ngIf="f.email.errors && f.email.errors.email">Please, enter valid email address.</small>  -->
+                  </div>
                 </div>
 						
+                <div class="form-group mb10">
+                  <input formControlName="password" class="form-control f-14 pr60" id="password-field" placeholder="Password" value="" type="password">
+                  <div *ngIf="f.password.touched && f.password.invalid" class="alert alert-danger">
+                    <small *ngIf="f.password.errors && f.password.errors.required">Password is required.</small>
+                    <small *ngIf="f.password.errors && f.password.errors.minlength">
+                      Password must be at least 6 characters
+                    </small>
+                    <small *ngIf="f.password.errors && f.password.errors.maxlength">
+                      Username must not exceed 40 characters
+                    </small>
+                  </div>
+                </div>
+
+                <div class="form-group mb10">
+                  <input formControlName="confirm_password" type="text" class="form-control f-14" placeholder="Confirm Password">
+                  <div *ngIf="f.confirm_password.touched && f.confirm_password.invalid" class="alert alert-danger">
+                    <small *ngIf="f.confirm_password.errors && f.confirm_password.errors.required">Conform Password is required.</small>
+                  </div>
+                </div>
+
+                <div class="form-group mb10 f-14">
+                  <input formControlName="mobile_no" type="text" class="form-control f-14" placeholder="Enter your mobile no.">
+                  <div *ngIf="f.mobile_no.touched && f.mobile_no.invalid" class="alert alert-danger">
+                    <small *ngIf="f.mobile_no.errors && f.mobile_no.errors.required">Mobile Number is required.</small>
+                  </div>
+                </div>
+
                 <h3>Address</h3>
                 
                 <div formGroupName="address">
@@ -22,12 +58,19 @@
                     <input placeholder="Enter city title" type="text" formControlName="city" class="form-control f-14">                    
                     <input placeholder="Enter state title" type="text" formControlName="state" class="form-control f-14">     
                     <input placeholder="Enter zip title" type="text" formControlName="zip" class="form-control f-14">
-                </div>
+                   
+                  </div>
 
 
 						<div class="form-group mb15">
 							<button type="submit"  class="base-btn m-blue-btn btn-h50 btn-block f-16 f-md-18" title="Signup">Signup</button>
 						</div>
+
+            <div class="form-group mb15">
+							<button (click)="resetForm()"  class="base-btn m-blue-btn btn-h50 btn-block f-16 f-md-18" title="Reset">Reset</button>
+						</div>
+
+            
 						<div class="form-group d-gblue-clr text-left">
 						  <div class="d-flex smart-checkbox-btn checkbox-strong-blue signup-checkbox-btn ml5">
 								<input id="remember" type="checkbox">

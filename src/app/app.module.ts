@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import { ProperCasePipe } from './_utils/pipes/propercase.pipe';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { LoginComponent } from './login/login.component';
     AppComponent,
     NotfoundComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    ProperCasePipe
   ],
   imports: [
     BrowserModule,
