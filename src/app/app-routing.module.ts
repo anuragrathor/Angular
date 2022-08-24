@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CustomerComponent } from './customer/customer.component';
+import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 const routes: Routes = [
@@ -14,15 +15,10 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'customer', component: CustomerComponent
+    path: 'login', component: LoginComponent
   },
   {
-    path: 'user',
-    loadChildren: () => import('./user-auth/user-auth.module').then(m => m.UserAuthModule)
-  },
-  {
-    path: 'dashboard',
-    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+    path: 'signup', component: SignupComponent
   }
 ];
 

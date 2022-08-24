@@ -10,27 +10,17 @@ import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CustomerComponent } from './customer/customer.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
-import { HeaderComponent } from './layout/header/header.component';
-import { FooterComponent } from './layout/footer/footer.component';
-import { NavbarComponent } from './layout/navbar/navbar.component';
-import { SidebarComponent } from './layout/sidebar/sidebar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomerComponent,
     NotfoundComponent,
     SignupComponent,
-    LoginComponent,
-    HeaderComponent,
-    FooterComponent,
-    NavbarComponent,
-    SidebarComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
