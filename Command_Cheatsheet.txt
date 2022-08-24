@@ -2,4 +2,5 @@
 2.) ng g c module_name/component_name   :   Create component inside the module.
 3.) ng serve -o 			:   To Run the Application
 4.) ng g s service_name 		:   To Generate the Service 
-5.) 
+5.) ng generate module orders --route orders --module app.module  :  module with routing, along with its stub component.
+6.) 
