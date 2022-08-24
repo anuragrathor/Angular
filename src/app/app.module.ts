@@ -15,6 +15,7 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { ProperCasePipe } from './_utils/pipes/propercase.pipe';
 import { CPDefaultThemeDirective }  from './_utils/directives/cp-default-theme.directive';
+import { CPCustomThemeDirective }  from './_utils/directives/cp-custom-theme.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CPDefaultThemeDirective }  from './_utils/directives/cp-default-theme.d
     SignupComponent,
     LoginComponent,
     ProperCasePipe,
-    CPDefaultThemeDirective
+    CPDefaultThemeDirective,
+    CPCustomThemeDirective
   ],
   imports: [
     BrowserModule,

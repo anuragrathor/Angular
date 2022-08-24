@@ -7,7 +7,7 @@
 				<div class="col-12 col-lg-10 mx-auto"> 
 					<h4 class="w500 login-text-clr" cpDefaultTheme>Create your FREE Account with us. {{customerForm.valid}}</h4>
           {{"Anurag Rathore" | propercase : false}}
-					<p class="f-14 f-md-16 d-gblue-clr mt5 mt-md5 mb15 mb-md20 w400">It’s Easy to GET Started! </p>
+					<p class="f-14 f-md-16 d-gblue-clr mt5 mt-md5 mb15 mb-md20 w400" cpCustomTheme tcolor="blue" tsize="30px">It’s Easy to GET Started! </p>
 					<form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
                 <div class="form-group mb10">
                   <input type="text" formControlName="firstName" class="form-control f-14" placeholder="Enter full name(Up to 20 character)">
@@ -51,6 +51,17 @@
                   </div>
                 </div>
 
+                <div class="form-group mb10 f-14">
+                  <h3>Gender</h3>
+                <input type="radio"  value="male" formControlName="gender"> Male
+                <input type="radio"  value="female" formControlName="gender"> Female
+                <div *ngIf="f.gender.errors" class="error">
+                  <small *ngIf="f.gender.errors.required">
+                    Please select Gender.
+                  </small>
+                </div> 
+              </div>
+
                 <h3>Address</h3>
                 
                 <div formGroupName="address">
@@ -59,7 +70,7 @@
                     <input placeholder="Enter state title" type="text" formControlName="state" class="form-control f-14">     
                     <input placeholder="Enter zip title" type="text" formControlName="zip" class="form-control f-14">
                    
-                  </div>
+                </div>
 
 
 						<div class="form-group mb15">

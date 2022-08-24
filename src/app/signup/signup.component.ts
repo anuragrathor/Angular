@@ -12,30 +12,14 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 export class SignupComponent implements OnInit {
 
   submitted = false;
+  customerForm!: FormGroup;
 
   constructor(private loader: LoaderServiceService,private toaster: ToasterServiceService,private fb: FormBuilder) {
     //loader.loaderToggle(true);
     //toaster.showSuccess('Welcome dear');
   }
 
-  customerForm = this.fb.group({
-    firstName: ['', Validators.required],
-    email: ['', Validators.required],
-    password: ['', [
-                      Validators.required,
-                      Validators.minLength(6),
-                      Validators.maxLength(20)
-                    ]
-              ],
-    confirm_password: ['', Validators.required],
-    mobile_no: ['', Validators.required],
-    address: this.fb.group({
-      country: ['', Validators.required],
-      state: ['', Validators.required],
-      city: ['', Validators.required],
-      zip: ['', Validators.required]
-    }),
-  });
+  
 
 
   //Provide Form Control to this f  
@@ -62,8 +46,29 @@ export class SignupComponent implements OnInit {
  }
 
 
- ngOnInit(): void {
-   this.setDefault();
+  ngOnInit(): void {
+    this.customerForm = this.fb.group({
+      firstName: ['', Validators.required],
+      email: ['', Validators.required],
+      password: ['', [
+                        Validators.required,
+                        Validators.minLength(6),
+                        Validators.maxLength(20)
+                      ]
+                ],
+      confirm_password: ['', Validators.required],
+      mobile_no: ['', Validators.required],
+      gender: ['', Validators.required],
+      address: this.fb.group({
+        country: ['', Validators.required],
+        state: ['', Validators.required],
+        city: ['', Validators.required],
+        zip: ['', Validators.required]
+      }),
+    }); 
+
+    
+    this.setDefault();
  }
 
  setDefault() {
