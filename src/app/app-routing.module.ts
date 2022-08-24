@@ -22,7 +22,12 @@ const routes: Routes = [
   },
   {
     path: 'login', component: LoginComponent
+  },
+  {
+    path: 'user',
+    loadChildren: () => import('./user-auth/user-auth.module').then(m => m.UserAuthModule)
   }
+
 
 ];
 
