@@ -1,0 +1,190 @@
+.login-background{
+	background: #ffffff;
+}
+.logo-style{
+	height: 160px;
+	width: 160px;
+	background: #ffffff;
+	border: 15px solid #eff3f6;
+	border-radius: 50%;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: auto;
+	overflow: hidden;
+}
+.login-container,
+.signup-container{
+	padding:30px 15px;
+	min-height: 100vh;
+	height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo-style img{
+	max-height: 85px
+}
+a.base-btn.btn-h50.f-md-16, 
+.base-btn.btn-h50.f-md-16, 
+a.base-btn.btn-h50.f-md-16:focus, 
+.base-btn.btn-h50.f-md-16:focus{
+	font-size: 16px !important;
+	padding: 12px 20px;
+}
+/* signup page checkbox label CSS  */
+.signup-checkbox-btn label p{    
+  line-height: 160%;
+  font-size: 12px;
+  font-weight:300;
+}
+.signup-checkbox-btn label::before ,
+.signup-checkbox-btn label::after { top: 2px;}
+.signup-checkbox-btn input[type="checkbox"]:checked + label::before {
+    background-color: #5c6ac4;
+    border-color: #5c6ac4;
+}
+.login-checkbox-btn input[type="checkbox"]:checked + label::before {
+    background-color: #5c6ac4;
+    border-color: #5c6ac4;
+}
+.siign-up-border{
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #ced4d8;
+}
+@media(min-width: 768px){
+	.login-container,
+	.signup-container
+	{
+		padding: 30px;
+	}
+	a.base-btn.btn-h50.f-md-18, 
+	.base-btn.btn-h50.f-md-18, 
+	a.base-btn.btn-h50.f-md-18:focus, 
+	.base-btn.btn-h50.f-md-18:focus{
+		font-size: 18px !important;
+		padding: 12px 20px;
+	}
+}
+@media(min-width: 992px){
+	.logo-style{
+		height: 220px;
+		width: 220px;
+		border: 20px solid #eff3f6;
+	}
+	.logo-style img{
+		max-height: 115px
+	}
+	.login-container{
+		padding: 30px;
+		height: 100vh;
+	}
+}
+@media(min-width: 1200px){
+	.signup-container{		
+		height: 100vh;
+	}
+}
+/* Features Lisiting */
+ul.feature-listing{margin: 0; padding: 0; position: relative;}
+ul.feature-listing li{list-style: none; margin-bottom: 15px; }
+ul.feature-listing li:last-child{margin-bottom: 0px;}
+
+/* Features Lisiting for password conbination */
+.password-cases ul.feature-listing li{list-style: none; margin-bottom: 12px;}
+.password-cases ul.feature-listing li:last-child{margin-bottom: 0px;}
+
+/* Password Tootltip Design */
+.password-tooltip {background: #34303f; padding: 20px; border-radius: 5px; position: absolute; top: 100; left: 0%; z-index: 9; margin-top: 10px;}
+.password-tooltip::before{
+	content: '';
+	display: block;  
+	position: absolute;
+	left: 15px;
+	top: -13px;
+	width: 0;
+	height: 0;
+	border-bottom: 7px solid #34303f;
+	border-top: 7px solid transparent;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+@media (min-width:768px){
+.password-tooltip {left: 103%; top: 0; margin-top: 0px;}
+.password-tooltip::before{
+	content: '';
+	display: block;  
+	position: absolute;
+	right: 100%;
+	top: 16px;
+	left: -13px;
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-right: 7px solid #34303f;
+	border-bottom: 7px solid transparent;
+	border-left: 7px solid transparent;
+}
+}
+
+.password-tooltip ul.feature-listing li{list-style: none; margin-bottom: 16px; white-space: nowrap; }
+.password-tooltip ul.feature-listing li:last-child{margin-bottom: 0px;}
+.white-check-arrow{background: #ffffff; border-radius: 50%; display: inline-block}
+
+.field-white-bg
+{
+	position:relative;
+	background-color:#ffffff;
+}
+/* Singup Confirmation page css */
+.signup-confirmation-container{
+	padding:30px 15px;
+}
+@media screen and (min-width:992px){
+.signup-confirmation-container{
+	padding:90px 15px;
+	min-height: 100vh;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}	
+.signup-confirmation-container.email-confirmation-container{
+	padding: 45px 15px;
+}	
+}
+.join-now{margin-top:15px;}
+@media(min-width:768px){
+.join-now{margin-top:20px;}	
+}
+.join-now img.icon-size{min-width:43px; margin-right:20px;}
+.join-now .title{color:#34303f; font-size:18px; font-weight:500; margin:0px; line-height:140%;}
+.join-now .description{color:#151122; font-size:15px; font-weight:400; margin:0px; line-height:140%; margin-top:8px;}
+
+/* Social Media css */
+.login-social-media a{
+	width:40px;
+	height:40px;
+	background:#ffffff;
+	display:inline-flex;
+	justify-content:center;
+	align-items:center;
+	line-height:40px;
+	border:solid 1px #ced4d8;
+	border-radius:5px;
+	color:#7f7c88;
+	text-decoration:none;
+	font-size:20px;
+	margin-right:8px;
+}
+.login-social-media a:hover{
+	background:#5c6ac4;
+	border:solid 1px #5c6ac4;
+	color:#ffffff;
+}

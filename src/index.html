@@ -9,65 +9,72 @@
 
     <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/toast.css">
-    <!--Morris Chart CSS -->
-		<link rel="stylesheet" href="assets/plugins/morris/morris.css">
+   <!-- Bootstrap 4 Stylesheet ----->
+<link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.min.css">
+<!-- Common Css Stylesheet ----->
+<link rel="stylesheet" href="assets/css/general.css">
+<link rel="stylesheet" href="assets/css/elements.css">
+<!-- Smart Login Css Stylesheet ----->
+<link rel="stylesheet" href="assets/apps/smart/css/login.css">
+<!-- Bootstrap Select Dropdown Stylesheet ----->
+<link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap-select.css">
+<!-- Custom Scrollbar Stylesheet ----->
+<link rel="stylesheet" href="assets/vendors/scrollbar/jquery.mCustomScrollbar.css">
+<!---- Country Code Plugin Stylesheet ------>
+<link rel="stylesheet" href="assets/vendors/tel-input/intlTelInput.css">
 
-    <!-- App css -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="assets/plugins/switchery/switchery.min.css">
 
-    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
 
-    <script src="assets/js/modernizr.min.js"></script>
+<!-- Favicon Icon -->
+<link rel="icon" href="assets/images/favicon.png" type="image/png"/>
+<link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.min.css"/>
+<!-- Common Css Stylesheet -->
+<link rel="stylesheet" href="assets/css/general.css"/>
+<link rel="stylesheet" href="assets/css/elements.css"/>
+<!-- Bootstrap Select Dropdown Stylesheet -->
+<link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap-select.css"/>
+<!-- DotComPal Header Css Stylesheet -->
+<link rel="stylesheet" href="assets/apps/smart/css/dcp-header-new.css"/>
+<!-- DotComPal Dahboard Css Stylesheet -->
+<link rel="stylesheet" href="assets/apps/smart/css/custom.css"/>
+<!-- Custom Scrollbar Stylesheet -->
+<link rel="stylesheet" href="assets/vendors/scrollbar/jquery.mCustomScrollbar.css"/>
+<!-- Country Code Plugin Stylesheet -->
+<link rel="stylesheet" href="assets/vendors/tel-input/intlTelInput.css"/>
+<!-- Country Chooser Flags -->
+<link href="assets/vendors/flagstrap/css/flags.css" rel="stylesheet"/>
+
 
   </head>
   
-    <script type='text/javascript' src="assets/vendors/jquery/jquery.min.js"></script>
-    <script type='text/javascript' src="assets/js/sticky_footer.js"></script>
-    <script type='text/javascript' src="assets/vendors/bootstrap/popper.min.js"></script>
-    <script type='text/javascript' src="assets/vendors/bootstrap/bootstrap.min.js"></script>
+   	
+<!---- Common Jquery and Bootstrap 4 & Select Dropdown Jquery Files ------>
+<script type='text/javascript' src="assets/vendors/jquery/jquery.min.js"></script>
+<script type='text/javascript' src="assets/vendors/bootstrap/popper.min.js"></script>
+<script type='text/javascript' src="assets/vendors/bootstrap/bootstrap.min.js"></script>
+<script type='text/javascript' src="assets/vendors/bootstrap/bootstrap-select.js"></script>
+<!---- Custom Scrollbar Jquery File ------>
+<script type='text/javascript' src="assets/vendors/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<!---- Add Custom Javacscript File ------>
+<script type='text/javascript' src="assets/js/script.js"></script>
+<!----- Country Code Plugins ---------> 
+<script src="assets/vendors/tel-input/intlTelInput.js"></script> 
 
 
-        <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/detect.js"></script>
-        <script src="assets/js/fastclick.js"></script>
-        <script src="assets/js/jquery.blockUI.js"></script>
-        <script src="assets/js/waves.js"></script>
-        <script src="assets/js/jquery.slimscroll.js"></script>
-        <script src="assets/js/jquery.scrollTo.min.js"></script>
-        <script src="assets/plugins/switchery/switchery.min.js"></script>
+<!--- NVD3 Library Graph --->
+<link href="assets/vendors/nvd3/nv.d3.css" rel="stylesheet" type="text/css">
+<link href="assets/vendors/nvd3/nvd-style.css" rel="stylesheet" type="text/css">
+<script src="assets/vendors/nvd3/d3.min.js"></script>
+<script src="assets/vendors/nvd3/nv.d3.min.js"></script>
+<script src="assets/vendors/nvd3/stream_layers.js"></script>
 
-        <!-- Counter js  -->
-        <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
-        <script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
-
-        <!--Morris Chart-->
-		<script src="assets/plugins/morris/morris.min.js"></script>
-		<script src="assets/plugins/raphael/raphael-min.js"></script>
-
-        <!-- Dashboard init -->
-        <script src="assets/pages/jquery.dashboard.js"></script>
-
-        <!-- App js -->
-        <script src="assets/js/jquery.core.js"></script>
-        <script src="assets/js/jquery.app.js"></script>
-        
-
-
-
+<script>// Country Code Plugins js //
+	$("#phone").intlTelInput({
+		autoHideDialCode: false,
+		nationalMode: false,
+		 preferredCountries: ['in', 'us'],
+		utilsScript: "assets/vendors/tel-input/utils.js"
+	});</script>
 <body>
   <app-root></app-root>
 </body>
