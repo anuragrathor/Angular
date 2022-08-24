@@ -44,12 +44,15 @@ export class SignupComponent implements OnInit {
   }
 
  onSubmit() {
+    this.loader.loaderToggle(true);
     this.submitted = true;
 
     if (this.customerForm.invalid) {
       return;
     }
 
+    this.toaster.showSuccess('User Registered Successfully');
+    this.loader.loaderToggle(false);
     console.log(this.customerForm.value);
  }
 
