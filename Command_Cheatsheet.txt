@@ -1,0 +1,5 @@
+1.) ng g module module_name --routing   :   this will create module with routing file.
+2.) ng g c module_name/component_name   :   Create component inside the module.
+3.) ng serve -o 			:   To Run the Application
+4.) ng g s service_name 		:   To Generate the Service 
+5.) 
